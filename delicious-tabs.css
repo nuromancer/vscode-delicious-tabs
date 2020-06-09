@@ -38,7 +38,7 @@
   > .title
   .tabs-container
   > .tab.sizing-shrink.has-icon-theme.close-button-right {
-  min-width: 125px;
+  min-width: 150px;
 }
 
 /* active tab */
@@ -84,26 +84,11 @@
   min-width: 125px;
 }
 
-.monaco-workbench
-  .part.editor
-  > .content
-  .editor-group-container
-  > .title
-  .tabs-container
-  > .tab.sizing-shrink
-  .tab-label {
-  min-width: 125px;
-}
-
 .tablist > .title .tabs-container > .tab > .tab-close {
   width: 15px;
 }
 
-.tablist > .tab > .tab-close .action-label {
-  margin-right: 0;
-}
-
-/* folder name labels: HIER IST DER FUCKUP!!! */
+/* folder name labels */
 .tablist
   .part.editor
   > .content
