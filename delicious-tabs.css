@@ -1,0 +1,138 @@
+/*  Important: user/settings.json: "workbench.editor.labelFormat": "short", */
+
+/* tab container */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container {
+  height: auto !important;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* tableiste auto height beim wrap */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title.tabs
+  > .tabs-and-actions-container
+  > .monaco-scrollable-element {
+  height: auto !important;
+}
+
+/* tab elements */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink.has-icon-theme.close-button-off,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink.has-icon-theme.close-button-right {
+  min-width: 125px;
+}
+
+/* active tab */
+.monaco-workbench .tabs-container .active {
+  background-color: rgb(80, 80, 80) !important;
+}
+
+.tabs-and-actions-container
+  .monaco-icon-label-container
+  .monaco-icon-description-container
+  .label-description {
+  margin-left: 0px !important;
+  font-weight: bold;
+  color: rgb(219, 219, 219);
+}
+
+.tab-label .monaco-icon-label-container {
+  flex-direction: column-reverse;
+  display: flex;
+}
+
+/* .tablist .monaco-icon-label::before { */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .monaco-icon-label:before,
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab
+  .monaco-icon-label::before {
+  background-size: 15px;
+  width: 15px;
+  height: 30px !important;
+}
+
+.tablist > .title .tabs-container > .tab.sizing-shrink {
+  min-width: 125px;
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink
+  .tab-label {
+  min-width: 125px;
+}
+
+.tablist > .title .tabs-container > .tab > .tab-close {
+  width: 15px;
+}
+
+.tablist > .tab > .tab-close .action-label {
+  margin-right: 0;
+}
+
+/* folder name labels: HIER IST DER FUCKUP!!! */
+.tablist
+  .part.editor
+  > .content
+  .editor-group-container
+  .tabs-and-actions-container
+  .monaco-icon-description-container {
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  top: -1px;
+  color: rgb(219, 219, 219);
+  height: 14px;
+}
+
+/* File Name Labels */
+.tablist
+  .part.editor
+  > .content
+  .editor-group-container
+  .tabs-and-actions-container
+  .label-name {
+  text-decoration: none;
+  position: relative;
+  font-weight: bold;
+  top: 2px;
+  font-size: 12px !important;
+}
+
+/* HIDE Upper right ICONS*/
+.tabs-and-actions-container .editor-actions {
+  display: none !important;
+}
