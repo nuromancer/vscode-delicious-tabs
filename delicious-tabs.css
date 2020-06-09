@@ -92,6 +92,17 @@
   background: inherit;
 }
 
+.monaco-workbench
+  .part.editor
+  > .content:not(.dragged-over)
+  .editor-group-container:not(.active)
+  > .title
+  .tabs-container
+  > .tab.sizing-shrink.active:not(.dragged)
+  > .tab-label::after {
+  background: inherit;
+}
+
 .tablist > .title .tabs-container > .tab.sizing-shrink {
   flex-basis: fit-content;
 }
