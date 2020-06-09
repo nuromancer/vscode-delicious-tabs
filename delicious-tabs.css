@@ -23,8 +23,9 @@
   height: auto !important;
 }
 
-/* tab elements */
-.monaco-workbench
+tab
+  elements
+  .monaco-workbench
   .part.editor
   > .content
   .editor-group-container
@@ -38,7 +39,9 @@
   > .title
   .tabs-container
   > .tab.sizing-shrink.has-icon-theme.close-button-right {
-  min-width: 150px;
+  min-width: 125px;
+  flex-basis: max-content;
+  flex-grow: 1;
 }
 
 /* active tab */
@@ -101,10 +104,6 @@
   > .tab.sizing-shrink.active:not(.dragged)
   > .tab-label::after {
   background: inherit;
-}
-
-.tablist > .title .tabs-container > .tab.sizing-shrink {
-  flex-basis: fit-content;
 }
 
 .tablist > .title .tabs-container > .tab > .tab-close {
