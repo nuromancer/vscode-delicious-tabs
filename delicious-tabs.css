@@ -23,9 +23,8 @@
   height: auto !important;
 }
 
-tab
-  elements
-  .monaco-workbench
+/* tab elements */
+.monaco-workbench
   .part.editor
   > .content
   .editor-group-container
