@@ -30,14 +30,14 @@
   .editor-group-container
   > .title
   .tabs-container
-  > .tab.sizing-shrink.has-icon-theme.close-button-off,
+  > .tab.sizing-shrink.has-icon.close-button-off:not(.sticky),
 .monaco-workbench
   .part.editor
   > .content
   .editor-group-container
   > .title
   .tabs-container
-  > .tab.sizing-shrink.has-icon-theme.close-button-right {
+  > .tab.sizing-shrink.has-icon.close-button-right {
   min-width: 125px;
   flex-basis: max-content;
   flex-grow: 1;
