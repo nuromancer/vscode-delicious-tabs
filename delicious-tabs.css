@@ -1,4 +1,10 @@
-/*  Important: user/settings.json: "workbench.editor.labelFormat": "short", */
+/*  Important, user settings must set this: user/settings.json: "workbench.editor.labelFormat": "short", */
+
+/* debug-toolbar */
+div.debug-toolbar {
+  background-color: rgb(56, 56, 56) !important;
+  border: #ff985f 1px solid !important;
+}
 
 /* tab container */
 .monaco-workbench
