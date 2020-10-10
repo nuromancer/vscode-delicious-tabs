@@ -1,9 +1,15 @@
 /*  Important, user settings must set this: user/settings.json: "workbench.editor.labelFormat": "short", */
 
-/* debug-toolbar */
+/* debug-toolbar border for better visibility */
 div.debug-toolbar {
   background-color: rgb(56, 56, 56) !important;
-  border: #ff985f 1px solid !important;
+  border: #ff985f 0.5px solid !important;
+}
+
+/* find widget border for better visibility */
+.monaco-editor .find-widget.visible {
+  border: #8e8e8e 1px solid;
+  height: 37px;
 }
 
 /* tab container */
@@ -141,7 +147,18 @@ div.debug-toolbar {
   position: relative;
   font-weight: bold;
   top: 2px;
-  font-size: 12px !important;
+  font-size: 12px; !important
+}
+
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab
+  .tab-label {
+  line-height: 17px !important;
 }
 
 /* HIDE Upper right ICONS*/
