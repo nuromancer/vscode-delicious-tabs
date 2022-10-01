@@ -165,3 +165,9 @@ div.debug-toolbar {
 .tabs-and-actions-container .editor-actions {
   display: none !important;
 }
+
+/* style window title */
+.monaco-workbench .part.titlebar>.window-title {
+  font-weight: 700;
+  color: #c1c1c1;
+}
